@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #form {
+            position:absolute;
+            top:50%;
+            right:0;
+            left:0;
+        }
+        input{
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+
+        button{
+          width: 10%;
+          padding: 6px 10px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+    </style>
+    <head>
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <div style="text-align:right">
+            <a href="https://ide-0276664cd728402d930ccc493e50c334-8080.cs50.ws/index.html">
+                <button name="search">Google Search</button>
+            </a>
+            <a href="https://ide-0276664cd728402d930ccc493e50c334-8080.cs50.ws/image.html">
+                <button name="image">Google Image Search</button>
+            </a>
+        </div>
+        <div id="form" style="text-align:center">
+            <form action="https://google.com/search">
+                <input placeholder="All of these words" type="text" name="as_q">
+                <input placeholder="This exact word or phrase" type="text" name="as_epq">
+                <input placeholder="Any of these words" type="text" name="as_oq">
+                <input placeholder="None of these words" type="text" name="as_eq">
+                <input type="submit" value="Google Advanced Search">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #form {
+            position:absolute;
+            top:50%;
+            right:0;
+            left:0;
+        }
+
+        input{
+          width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+
+        button{
+          width: 10%;
+          padding: 6px 10px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+    </style>
+    <head>
+        <title>Search</title>
+    </head>
+    <body>
+        <div style="text-align:right">
+            <a href="https://ide-0276664cd728402d930ccc493e50c334-8080.cs50.ws/image.html">
+                <button name="image">Google Image Search</button>
+            </a>
+            <a href="https://ide-0276664cd728402d930ccc493e50c334-8080.cs50.ws/advanced.html">
+                <button name="advanced">Advanced Search</button>
+            </a>
+        </div>
+        <div id="form" style="text-align:center">
+            <form action="https://google.com/search">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+            </form>
+        </div>
+    </body>
+</html>
